@@ -36,8 +36,8 @@ if CAGR_calculator.strip().upper() == "Y":
         starting_value = float(input("the initial value = "))
         growth = float(input("the growth_rate = "))
         cycles = int(input("cycles = "))
-        choise = input("do you want a yearly growth rate counter y/n ")
-        compound(starting_value, growth, cycles, choise)
+        choice = input("do you want a yearly growth rate counter y/n ")
+        compound(starting_value, growth, cycles, choice)
     except (TypeError, ValueError) as e:
         print("Wrong data type use numbers only", e)
     except ZeroDivisionError as e:
