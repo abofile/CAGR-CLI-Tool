@@ -7,7 +7,7 @@ def compound(initial_value: float, growth_rate: float, cycles: int, counter: str
     with open("cagr.txt", "a") as f:
         f.write(time.strftime("%Y-%m-%d %H:%M:%S\n"))
         f.write(f"Initial value: {initial_value}\n")
-        f.write(f"Growth rate: {growth_rate}\n")
+        f.write(f"Growth rate: {growth_rate}%\n")
     for i in range(cycles):
         total += rate * total
         if counter.strip().upper() == "Y":
